@@ -23,6 +23,6 @@
     "lodash": "^4.17.15",
     "three": "^0.112.1"
   },
-  "version": "0.0.2-a3",
+  "version": "0.0.2-a4",
   "types": "src/index.d.ts"
 }
