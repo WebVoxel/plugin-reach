@@ -160,10 +160,10 @@
   dependencies:
     three "^0.112.0"
 
-"@webvoxel/core@^0.0.2-a11":
-  version "0.0.2-a11"
-  resolved "https://registry.yarnpkg.com/@webvoxel/core/-/core-0.0.2-a11.tgz#5ab49911854ff719da97c6f069def4739a2ad576"
-  integrity sha512-2l9YhoW4vfWtEVwfT06VOu9hFgTV3sLb6Ub2pf2OGrps8xEKjmSbZ9P5ilkTudQ45QtzdZzH4/a7VMwWgkyOEw==
+"@webvoxel/core@^0.0.2-b1":
+  version "0.0.2-b1"
+  resolved "https://registry.yarnpkg.com/@webvoxel/core/-/core-0.0.2-b1.tgz#6f8499ccc1ee982ad3332b4c480bcb24d8c3d3db"
+  integrity sha512-pXfOP7y5rFN6qBPv/CK6LUEVDBP1bOGaUcT/FBZizTaCmJaE2k51AsVtJXYg0TQg6nKjloFAjSsl/v4n/xuP3w==
   dependencies:
     lodash "^4.17.15"
     three "^0.112.0"
