@@ -3,15 +3,15 @@ import { Vector2, Raycaster, BoxGeometry, LineBasicMaterial, EdgesGeometry, Line
 import _ from 'lodash';
 
 export interface IReachPluginOptions {
-    crosshair?: boolean;
+    crosshair?: boolean | string;
 };
 
 export class ReachPlugin extends Plugin {
-    private static CROSSHAIR_IMAGE: string = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAbklEQVRYCe2TMQ4AIQzD+v9Pwx4GD+GEdDIbSmkjk86UZ8Up2/XPw8/qO5YdNEQAJSQhIkC6GZIQESDdDEkoM/D6Pq8N5HwNJZG80xKhfr0hToQCDQGgYymo/nPdLyPEEpIQESDdDEmICJD++wxtx2k7/beOIxIAAAAASUVORK5CYII=';
+    private static CROSSHAIR_IMAGE: string = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAd0lEQVRYCe2TQQrAIAwE8/+H9JspvUk8zGFbhDKCoKwmy7hWhaO7r3WG5fLrq5lnnVcMK2iIAEpIQkSAdDMkISJAuhmS0MzA6X2dNjD7a2gSmXv6RKi/XhA7wgENAaDtU9D5z3WfjBBLSEJEgHQzJCEiQPrvM3QDBLTdXqOQprEAAAAASUVORK5CYII=';
     private raycaster = new Raycaster(); 
     private mouse = new Vector2(((window.innerWidth / 2) / window.innerWidth) * 2 - 1, -((window.innerHeight / 2) / window.innerHeight) * 2 + 1);
     private INTERSECTED?: Object3D;
-    private crosshair: boolean;
+    private crosshair: boolean | string;
 
     constructor(options?: IReachPluginOptions) {
         super('reach', {
@@ -26,12 +26,13 @@ export class ReachPlugin extends Plugin {
     public init(): void {
         if (this.crosshair) {
             const img = document.createElement('img');
-
-            img.src = ReachPlugin.CROSSHAIR_IMAGE;
             img.style.position = 'absolute';
             img.style.top = ((window.innerHeight / 2) - 18).toString() + 'px';
             img.style.left = ((window.innerWidth / 2) - 18).toString() + 'px';
             img.style.pointerEvents = 'none';
+
+            if (this.crosshair === true) img.src = ReachPlugin.CROSSHAIR_IMAGE;
+            else if (typeof this.crosshair === 'string') img.src = this.crosshair;
 
             document.body.appendChild(img);
         }
