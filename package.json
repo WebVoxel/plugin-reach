@@ -1,0 +1,28 @@
+{
+  "name": "@webvoxel/plugin-reach",
+  "main": "dist/webvoxel-plugin-reach.min.js",
+  "scripts": {
+    "dev": "webpack --config webpack.dev.js",
+    "package": "webpack --config webpack.prod.js",
+    "prepublishOnly": "yarn package"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.149",
+    "awesome-typescript-loader": "latest",
+    "typescript": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest",
+    "webpack-merge": "latest"
+  },
+  "dependencies": {
+    "@webvoxel/core": "^0.0.1-r3",
+    "@webvoxel/plugin-wasdcontrols": "^0.0.1-r4",
+    "lodash": "^4.17.15",
+    "three": "^0.112.1"
+  },
+  "version": "0.0.1-r1",
+  "types": "src/index.d.ts"
+}

@@ -1,0 +1,6 @@
+# Node, NPM and Yarn
+node_modules/
+yarn-error.log
+
+# Built artifacts
+dist/
