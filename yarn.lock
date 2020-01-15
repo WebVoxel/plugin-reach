@@ -160,11 +160,12 @@
   dependencies:
     three "^0.112.0"
 
-"@webvoxel/core@^0.0.1-r3":
-  version "0.0.1-r3"
-  resolved "https://registry.yarnpkg.com/@webvoxel/core/-/core-0.0.1-r3.tgz#7081a5affd3d1dd50b5d8720da4eeb1a3a2ce63f"
-  integrity sha512-k8pY++3b8QRqAiNz2wpQhq2Ib7mauVKl2bOTi6yBwxuaA688eCOkQWpEbDP1IaF5Wr+BRCddAHQTwlnM0QY/kg==
+"@webvoxel/core@^0.0.2-a11":
+  version "0.0.2-a11"
+  resolved "https://registry.yarnpkg.com/@webvoxel/core/-/core-0.0.2-a11.tgz#5ab49911854ff719da97c6f069def4739a2ad576"
+  integrity sha512-2l9YhoW4vfWtEVwfT06VOu9hFgTV3sLb6Ub2pf2OGrps8xEKjmSbZ9P5ilkTudQ45QtzdZzH4/a7VMwWgkyOEw==
   dependencies:
+    lodash "^4.17.15"
     three "^0.112.0"
 
 "@webvoxel/plugin-wasdcontrols@^0.0.1-r4":
