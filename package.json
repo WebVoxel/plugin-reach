@@ -18,11 +18,11 @@
     "webpack-merge": "latest"
   },
   "dependencies": {
-    "@webvoxel/core": "^0.0.1-r3",
+    "@webvoxel/core": "^0.0.2-a11",
     "@webvoxel/plugin-wasdcontrols": "^0.0.1-r4",
     "lodash": "^4.17.15",
     "three": "^0.112.1"
   },
-  "version": "0.0.1-r1",
+  "version": "0.0.2-a1",
   "types": "src/index.d.ts"
 }
