@@ -7,7 +7,7 @@ export interface IReachPluginOptions {
 };
 
 export class ReachPlugin extends Plugin {
-    private static CROSSHAIR_IMAGE: string = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA4SURBVDhPY/z//z8DAVAPpRuhNFbABKUpBqMGEQaDzyBQOoKlE4oAVV0EZeIEoymbSmDYGsTAAAB8DQuYnqvtFAAAAABJRU5ErkJggg==';
+    private static CROSSHAIR_IMAGE: string = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAbklEQVRYCe2TMQ4AIQzD+v9Pwx4GD+GEdDIbSmkjk86UZ8Up2/XPw8/qO5YdNEQAJSQhIkC6GZIQESDdDEkoM/D6Pq8N5HwNJZG80xKhfr0hToQCDQGgYymo/nPdLyPEEpIQESDdDEmICJD++wxtx2k7/beOIxIAAAAASUVORK5CYII=';
     private raycaster = new Raycaster(); 
     private mouse = new Vector2(((window.innerWidth / 2) / window.innerWidth) * 2 - 1, -((window.innerHeight / 2) / window.innerHeight) * 2 + 1);
     private INTERSECTED?: Object3D;
