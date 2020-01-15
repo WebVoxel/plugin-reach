@@ -1,6 +1,6 @@
 import { Plugin } from '@webvoxel/core';
 export interface IReachPluginOptions {
-    crosshair?: boolean;
+    crosshair?: boolean | string;
 }
 export declare class ReachPlugin extends Plugin {
     private static CROSSHAIR_IMAGE;
