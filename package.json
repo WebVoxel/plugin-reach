@@ -21,7 +21,7 @@
     "@webvoxel/core": "^0.0.2-b1",
     "@webvoxel/plugin-wasdcontrols": "^0.0.1-r4",
     "lodash": "^4.17.15",
-    "three": "^0.112.1"
+    "three": "^0.125.0"
   },
   "version": "0.0.2-a5",
   "types": "src/index.d.ts"
